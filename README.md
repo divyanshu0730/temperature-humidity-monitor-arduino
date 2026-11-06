@@ -25,6 +25,8 @@ An Arduino Uno based project that reads temperature and humidity from a DHT22 se
 | LCD E | D11 |
 | LCD D4-D7 | D5, D4, D3, D2 |
 
+![Simulation screenshot](simulation.png)
+
 ## Tools
 Arduino (C/C++), Wokwi simulator
 
