@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "author": "DGStudy",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 87, "left": -0.6, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -322.97, "left": 198.4, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -95.7,
+      "left": 426.6,
+      "attrs": { "temperature": "27.3" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 98.4,
+      "left": 539.4,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "lcd1:VSS", "uno:GND.1", "black", [ "h-105.6", "v301" ] ],
+    [ "lcd1:VDD", "uno:5V", "red", [ "h-249.5", "v483.5" ] ],
+    [ "lcd1:V0", "uno:GND.1", "black", [ "h-48.3", "v301" ] ],
+    [ "lcd1:RS", "uno:12", "green", [ "h-162.9", "v301" ] ],
+    [ "lcd1:RW", "uno:GND.1", "black", [ "h-28.9", "v301" ] ],
+    [ "lcd1:E", "uno:11", "green", [ "v0" ] ],
+    [ "lcd1:D4", "uno:5", "green", [ "v0" ] ],
+    [ "lcd1:D5", "uno:4", "green", [ "v0" ] ],
+    [ "lcd1:D6", "uno:3", "green", [ "v0" ] ],
+    [ "lcd1:D7", "uno:2", "green", [ "v0" ] ],
+    [ "lcd1:A", "uno:5V", "red", [ "v0" ] ],
+    [ "lcd1:K", "uno:GND.1", "black", [ "v0" ] ],
+    [ "dht1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "dht1:SDA", "uno:7", "green", [ "v0" ] ],
+    [ "dht1:GND", "uno:GND.1", "black", [ "v0" ] ],
+    [ "bz1:1", "uno:GND.1", "black", [ "v0" ] ],
+    [ "bz1:2", "uno:8", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
